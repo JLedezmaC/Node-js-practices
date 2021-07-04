@@ -1,0 +1,7 @@
+let multiplicador = 1;
+function factorizar (numeroLimite){
+    for(i=1; i<=numeroLimite; i++){
+        multiplicador = multiplicador * i;
+    }
+    return multiplicador
+}

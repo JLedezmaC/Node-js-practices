@@ -1,0 +1,2 @@
+let n = 0
+if(n===0){console.log("n es mayor a 0")}
