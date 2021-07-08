@@ -1,0 +1,54 @@
+Favorite music collections 
+
+	/* 1 */
+{
+    "_id" : ObjectId("60e5f9e5b36a6db8b15ed243"),
+    "Song_id" : "1",
+    "SongName" : "Perfume de gardenias",
+    "SongFile" : "www.perfumeDeGardenias.com",
+    "SongDuration" : "4:00",
+    "SongImg" : "",
+    "AlbumName" : ""
+}
+
+
+
+Playlists
+
+
+/* 1 */
+{
+    "_id" : ObjectId("60e60171b36a6db8b15ed894"),
+    "User_id" : "efefe",
+    "PlayListName" : "Clasicos",
+    "Songs" : [ 
+        {
+            "SongId" : "1",
+            "SongName" : "PerfumeDeGardenias",
+            "FileSong" : "",
+            "SongAuthor" : "",
+            "SongAlbum" : "",
+            "SongImg" : ""
+        }, 
+        {
+            "SongId" : "2",
+            "SongName" : "Esa chiquilla",
+            "FileSong" : "",
+            "SongAuthor" : "",
+            "SongAlbum" : "",
+            "SongImg" : ""
+        }
+    ]
+}
+
+
+Users 
+
+/* 1 */
+{
+    "_id" : ObjectId("60e5f8f8b36a6db8b15ed222"),
+    "Nombre" : "Ignacio",
+    "Apellidos" : "Campos ",
+    "Email" : "ignacioCl@gmail.com",
+    "Password" : "Password"
+}
