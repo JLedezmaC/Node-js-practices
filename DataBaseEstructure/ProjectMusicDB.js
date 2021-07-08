@@ -1,1 +1,1 @@
-db.getCollection('Playlists').find({})
+db.getCollection('FavoriteMusic').find({})
