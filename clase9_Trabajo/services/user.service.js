@@ -4,9 +4,9 @@ const User = require('../models/user.models')
 
 const userService = {}
 
-userService.createUser = async function({name,email}){ // async es para decir que tiene que esperar a que algo suceda y await es que tiene que esperar a que async se ejecute 
+userService.createUser = async function({name,email,password}){ // async es para decir que tiene que esperar a que algo suceda y await es que tiene que esperar a que async se ejecute 
     try{
-        const user = new User ({name,email}) // crea el usurio
+        const user = new User ({name,email,password}) // crea el usuario
         const newUser = await user.save(); // salva el usuario o mas bien lo guarda 
         return newUser;  // retorna el usuario
     } catch (e){
@@ -21,6 +21,15 @@ userService.getUsers = async function(){
         return users;
     }catch(error){
         throw new Error ('Error while Paginating Users')
+    }
+}
+
+userService.LogUser = async function(email,password){
+    try{
+        const logedUser = await User.findOne({email,password})
+        return logedUser;
+    }catch(error){
+        throw new Error ('Error while getting User')
     }
 }
 

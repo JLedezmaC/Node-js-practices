@@ -1,6 +1,6 @@
 const express = require('express'); // Este para apis
 const path = require('path'); // Esto me srive para seleccionar el path o la url 
-const app = express(); // Se llama o se utiliza  asi 
+const app = express(); // Se llama o se utiliza  asi express
 
 
 app.set('view engine','pug') // Es para decirle que vamos a utilizar las vistas y se utiliza el metodo put que en este caso se escribe como set

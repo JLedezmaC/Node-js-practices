@@ -15,7 +15,7 @@ app.get('/',(req, res) =>{ /*Esta es como la ruta del home  */
     res.sendFile(path.join(__dirname+'/public/index.html'))   //Path.join y el dir.name me da la direccion url de donde estoy ubicado actualmente y lo que esta en anarnajado es para decirme que me muetsre el archivo especificado
 }) 
 
-app.get('/about',(req, res) =>{ /* Lo que esta en la ruta es para mapearla en  la url   y lo quie esta en path.join por decir asi el archivo que se ejecuta en esa ruta especifica  */
+app.get('/about',(req, res) =>{ /* Lo que esta en la ruta es para mapearla en  la url   y lo que esta en path.join por decir asi el archivo que se ejecuta en esa ruta especifica  */
     res.sendFile(path.join(__dirname+'/public/about.html'))  //Path.join y el dir.name me da la direccion url de donde estoy ubicado actualmente y lo que esta en anarnajado es para decirme que me muetsre el archivo especificado
 }) 
 
@@ -27,3 +27,6 @@ app.post('/',(req, res) =>{ // res es la informacion que le vamos a enviar al us
 })
 
 app.listen(3501); // Este es el port en el que se levanta el servidor 
+
+
+// Este es el mas importante por el momento 
